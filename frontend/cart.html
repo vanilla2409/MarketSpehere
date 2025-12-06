@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarketWeave — Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MarketWeave</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="navCartCount">0</span>)</a>
+      <a href="seller.html">Seller Dashboard</a>
+      <a href="messages.html">Messages</a>
+      <a href="login.html" id="navAuthLink">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <section id="cartItems" class="cart-items">
+      <!-- JS will render cart rows here -->
+    </section>
+
+    <section class="cart-summary">
+      <p><strong>Total:</strong> ₹<span id="cartTotal">0</span></p>
+      <button class="btn btn-primary" id="checkoutBtn">Place Order (Demo)</button>
+      <p id="checkoutMessage" class="checkout-message"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 MarketWeave — Buyer & Seller Marketplace Platform
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

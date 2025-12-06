@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarketWeave — Seller Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MarketWeave</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="navCartCount">0</span>)</a>
+      <a href="seller.html">Seller Dashboard</a>
+      <a href="messages.html">Messages</a>
+      <a href="login.html" id="navAuthLink">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Seller Dashboard</h1>
+
+    <section class="seller-summary">
+      <h2>Overview</h2>
+      <p>Total products listed: <span id="sellerProductCount">0</span></p>
+    </section>
+
+    <section class="seller-products">
+      <h2>My Products</h2>
+      <div id="sellerProductsGrid" class="products-grid">
+        <!-- JS will render seller products here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 MarketWeave — Buyer & Seller Marketplace Platform
+  </footer>
+
+  <!-- IMPORTANT: app.js first, then seller.js -->
+  <script src="js/app.js"></script>
+  <script src="js/seller.js"></script>
+</body>
+</html>

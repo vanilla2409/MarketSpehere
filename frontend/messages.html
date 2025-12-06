@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarketWeave — Messages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MarketWeave</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="navCartCount">0</span>)</a>
+      <a href="seller.html">Seller Dashboard</a>
+      <a href="messages.html">Messages</a>
+      <a href="login.html" id="navAuthLink">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Messages</h1>
+
+    <div class="messages-layout">
+      <aside class="conversation-list">
+        <h2>Conversations</h2>
+        <ul>
+          <li>Order #101 — Smartphone X</li>
+          <li>Order #102 — Data Structures Book</li>
+          <li>Query — Notebook A5</li>
+        </ul>
+      </aside>
+
+      <section class="message-thread">
+        <h2 id="conversationTitle">Selected Conversation</h2>
+        <div class="messages-window" id="messagesWindow">
+          <div class="message seller">Seller: Your order has been packed.</div>
+          <div class="message buyer">You: Thank you!</div>
+        </div>
+        <div class="message-input">
+          <input type="text" id="messageInput" placeholder="Type a reply (demo only)...">
+          <button class="btn btn-primary" id="sendMessageBtn">Send</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © 2025 MarketWeave — Buyer & Seller Marketplace Platform
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/messages.js"></script>
+</body>
+</html>
